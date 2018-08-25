@@ -1,0 +1,4 @@
+displayName: A simple Hello World Declarative template
+parameters:
+  - name: aParam
+    displayName: An individual parameter
