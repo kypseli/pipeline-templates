@@ -1,0 +1,14 @@
+displayName: branch source with params in multibranch
+type: MULTIBRANCH
+parameters:
+  - name: repoOwner
+    type: string
+    defaultValue: kypseli
+  - name: repository
+    type: string
+    defaultValue: apple
+multibranch:
+  branchSource:
+    github:
+      repoOwner: ${repoOwner}
+      repository: ${repository}
