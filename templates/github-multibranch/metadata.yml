@@ -1,4 +1,4 @@
-displayName: branch source with params in multibranch
+displayName: GitHub Multibranch Pipeline Example
 type: MULTIBRANCH
 description: A simple CloudBees Pipeline Template with support for a GitHub Multi-branch project.
 parameters:
@@ -7,6 +7,9 @@ parameters:
     defaultValue: kypseli
   - name: repository
     type: string
+  - name: github-credential-id
+    type: credential
+    defaultValue: beedemo-ops-github
 multibranch:
   branchSource:
     github:
