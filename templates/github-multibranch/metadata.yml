@@ -8,7 +8,7 @@ parameters:
   - name: repository
     type: string
   - name: github-credential-id
-    type: credential
+    type: credentials
     defaultValue: beedemo-ops-github
 multibranch:
   branchSource:
