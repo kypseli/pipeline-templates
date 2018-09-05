@@ -7,12 +7,12 @@ parameters:
     defaultValue: kypseli
   - name: repository
     type: string
-  - name: github-credential-id
+  - name: githubCredentialId
     type: credentials
-    defaultValue: beedemo-ops-github
+    defaultValue: kypseli-github-token
 multibranch:
   branchSource:
     github:
-      credentialsId: beedemo-ops-github
+      credentialsId: ${githubCredentialId}
       repoOwner: ${repoOwner}
       repository: ${repository}
