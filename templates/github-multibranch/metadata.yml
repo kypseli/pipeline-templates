@@ -3,12 +3,13 @@ type: MULTIBRANCH
 description: A simple CloudBees Pipeline Template with support for a GitHub Multi-branch project.
 parameters:
   - name: repoOwner
-    type: string
+    displayName: Repository Owner
     defaultValue: kypseli
   - name: repository
-    type: string
+    displayName: Repository
   - name: githubCredentialId
-    type: credentials
+    displayName: GitHub Credential ID
+    type: CREDENTIALS
     defaultValue: kypseli-github-token
 multibranch:
   branchSource:
