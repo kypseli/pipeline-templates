@@ -14,6 +14,7 @@ parameters:
 multibranch:
   branchSource:
     github:
+      id: ${repository}
       credentialsId: ${githubCredentialId}
       repoOwner: ${repoOwner}
       repository: ${repository}
