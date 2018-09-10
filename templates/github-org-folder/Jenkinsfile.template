@@ -1,0 +1,10 @@
+pipeline {
+  agent none
+  stages {
+    stage('Checkout') {
+      steps {
+        echo "Hello world from the GitHub Org ${repoOwner} with marker file ${env.MARKER_FILE}"
+      }
+    }
+  }
+}
