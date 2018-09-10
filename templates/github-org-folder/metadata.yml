@@ -1,5 +1,6 @@
 displayName: GitHub Org Folder with Custom Marker File
 type: ORGANIZATION_FOLDER
+description: A simple CloudBees Pipeline Template with support for a GitHub Org Folder project with a custom marker file.
 parameters:
   - name: repoOwner
     type: string
