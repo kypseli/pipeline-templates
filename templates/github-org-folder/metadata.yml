@@ -13,4 +13,4 @@ organizationFolder:
   navigator:
     github:
       repoOwner: ${repoOwner}
-markerFile: .static-nginx
+  markerFile: .static-nginx
