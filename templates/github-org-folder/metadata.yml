@@ -1,0 +1,16 @@
+displayName: GitHub Org Folder with Custom Marker File
+type: ORGANIZATION_FOLDER
+parameters:
+  - name: repoOwner
+    type: string
+    displayName: Repository Owner
+    defaultValue: kypseli
+  - name: githubCredentialId
+    displayName: GitHub Credential ID
+    type: CREDENTIALS
+    defaultValue: kypseli-github-token
+organizationFolder:
+  navigator:
+    github:
+      repoOwner: ${repoOwner}
+markerFile: .static-nginx
