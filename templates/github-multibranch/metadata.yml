@@ -1,4 +1,6 @@
-displayName: GitHub Multibranch Pipeline Example
+version: 1
+kind: pipeline-template
+name: GitHub Multibranch Pipeline Example
 type: MULTIBRANCH
 description: A simple CloudBees Pipeline Template with support for a GitHub Multi-branch project.
 parameters:
