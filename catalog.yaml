@@ -1,4 +1,4 @@
-id: apiTeamCatalog
+name: apiTeamCatalog
 displayName: API Team Template Catalog
 version: 1
 kind: pipeline-template-catalog
