@@ -1,4 +1,5 @@
-displayName: A simple Hello World Declarative template
+name: A simple Hello World Declarative template
+kind: pipeline-template
 parameters:
   - name: aParam
     displayName: An individual parameter
