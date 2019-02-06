@@ -2,6 +2,7 @@ name: A simple Hello World Declarative template
 kind: pipeline-template
 version: 1
 templateFile: Jenkinsfile.template
+description: A simple CloudBees Pipeline Template with a parameter and overriding template script file name.
 parameters:
   - name: aParam
     displayName: An individual parameter
