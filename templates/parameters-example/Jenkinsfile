@@ -1,0 +1,31 @@
+pipeline {
+    agent none
+
+    stages {
+        stage('only-if-true') {
+            when {
+                expression {
+                    return TRUE_OR_FALSE
+                }
+            }
+            steps {
+                echo "We ran the stage because TRUE_OR_FALSE was true"
+            }
+        }
+        stage('only-if-false') {
+            when {
+                expression {
+                    return !TRUE_OR_FALSE
+                }
+            }
+            steps {
+                echo "We ran the stage because TRUE_OR_FALSE was false"
+            }
+        }
+        stage('hello') {
+            steps {
+                echo "Hello ${DEFAULT_VALUE}"
+            }
+        }
+    }
+}
