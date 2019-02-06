@@ -27,5 +27,10 @@ pipeline {
                 echo "Hello ${DEFAULT_VALUE}"
             }
         }
+        stage('deploy') {
+            steps {
+                echo "Deploying to ${ALLOWED_VALUES}"
+            }
+        }
     }
 }
