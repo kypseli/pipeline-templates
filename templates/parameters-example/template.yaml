@@ -1,6 +1,6 @@
 version: 1
 kind: pipeline-template
-name: Parameters examples.
+name: Parameters Examples
 parameters:
   - name: CRED_ID
     displayName: A credentials parameter
