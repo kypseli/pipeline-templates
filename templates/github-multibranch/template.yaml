@@ -2,7 +2,7 @@ version: 1
 kind: pipeline-template
 name: GitHub Multibranch Pipeline Example
 type: MULTIBRANCH
-description: A simple CloudBees Pipeline Template with support for a GitHub Multi-branch project.
+description: A simple CloudBees Pipeline Template with support for a GitHub Multi-branch project and markerFile.
 parameters:
   - name: repoOwner
     displayName: Repository Owner
@@ -20,4 +20,5 @@ multibranch:
       credentialsId: ${githubCredentialId}
       repoOwner: ${repoOwner}
       repository: ${repository}
+  markerFile: Dockerfile
      
