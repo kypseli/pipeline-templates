@@ -1,6 +1,7 @@
 name: A simple Hello World Declarative template
 kind: pipeline-template
 version: 1
+templateFile: Jenkinsfile.template
 parameters:
   - name: aParam
     displayName: An individual parameter
